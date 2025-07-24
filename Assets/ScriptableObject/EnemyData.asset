@@ -17,7 +17,9 @@ MonoBehaviour:
   runSpeed: 2
   attackDuration: 1
   attackCooldown: 1
+  attackSoundName: ZAttack
   PrimaryTargetTag: Tower
-  runAnimationName: zombieRun
+  runAnimationName: move
   attackAnimationName: attack01 0
   dieAnimationName: down
+  winAnimationName: ZWIn
