@@ -9,6 +9,7 @@ public class EnemyData : ScriptableObject
     public float attackDuration = 1f;
     public float attackCooldown = 1f;
     public string attackSoundName = "ZAttack";
+    public string deadSoundName="Dead";
     public string PrimaryTargetTag = "Tower";
     public string runAnimationName = "zombieRun";
     public string attackAnimationName = "ZombieAttack";
