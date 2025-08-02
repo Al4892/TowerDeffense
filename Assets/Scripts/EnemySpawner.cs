@@ -25,11 +25,11 @@ public class EnemySpawner : MonoBehaviour
     {
         while (true)
         {
+            yield return new WaitForSeconds(_spawnInterval);
             Vector2 direction = Random.insideUnitCircle.normalized;
             Vector3 spawnPosition = new Vector3(direction.x * _spawnRadius, 0f, direction.y * _spawnRadius);
             spawnPosition.y = _positionY;
             _InstantiateZombie?.Invoke(spawnPosition);
-            yield return new WaitForSeconds(_spawnInterval);
         }
     }
 }

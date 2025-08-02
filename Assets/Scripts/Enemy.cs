@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     private Animator _animator;
     [SerializeField]
     private UnityEvent _onInitialize;
+    
     private bool _isRunning;
     
     private Vector3 _targetPosition;
@@ -30,7 +31,7 @@ public class Enemy : MonoBehaviour
         {
             Vector3 targetPosition = new Vector3(target.transform.position.x,transform.position.y,target.transform.position.z);
             _targetPosition = targetPosition;
-            _targetHealth = transform.GetComponent<Health>();
+            _targetHealth = target.GetComponent<Health>();
             _isRunning = true;
             _animator.Play(_enemyData.runAnimationName);
         }
@@ -76,12 +77,13 @@ public class Enemy : MonoBehaviour
     }
     private IEnumerator DieCoroutine()
     {
+        _isRunning = false;
         SoundManager.instance.Play(_enemyData.deadSoundName);
         _animator.Play(_enemyData.dieAnimationName);
         yield return new WaitForSeconds(2f);
         gameObject.SetActive(false);
     }
-    private void ODisable()
+    private void OnDisable()
     {
         StopAllCoroutines();
         _isRunning = false;

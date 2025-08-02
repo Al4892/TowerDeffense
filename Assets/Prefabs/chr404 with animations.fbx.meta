@@ -64,7 +64,7 @@ ModelImporter:
       takeName: damage
       internalID: -3551865654841311323
       firstFrame: 0
-      lastFrame: 51
+      lastFrame: 24
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -180,14 +180,14 @@ ModelImporter:
       takeName: move
       internalID: -139364887524879693
       firstFrame: 0
-      lastFrame: 56
+      lastFrame: 24
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -209,7 +209,7 @@ ModelImporter:
       takeName: down
       internalID: 5826557733320977955
       firstFrame: 0
-      lastFrame: 56
+      lastFrame: 24
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -296,7 +296,7 @@ ModelImporter:
       takeName: attack02
       internalID: 4189676145174806922
       firstFrame: 0
-      lastFrame: 56
+      lastFrame: 48
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

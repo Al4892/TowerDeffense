@@ -40,13 +40,13 @@ public class GunsCreator : MonoBehaviour
         }
         if (Input.GetMouseButtonUp(0))
         {
-            _gun = null;
             if (!_gunPlaced)
             {
                 _gun.gameObject.SetActive(false);
             }
+            _gun = null;
         }
-        _gun = null;
+        
     }
     public void SetGun(Transform gun)
     {

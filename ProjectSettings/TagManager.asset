@@ -8,6 +8,7 @@ TagManager:
   - FxTemporaire
   - Tower
   - Enemy
+  - Floor
   layers:
   - Default
   - TransparentFX
