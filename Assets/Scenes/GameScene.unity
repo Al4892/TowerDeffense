@@ -470,7 +470,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 42267859}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: PlayMusic
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
